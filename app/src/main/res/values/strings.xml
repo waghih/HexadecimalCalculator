@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Hexadecimal Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hex_0">0</string>
+    <string name="hex_1">1</string>
+    <string name="hex_2">2</string>
+    <string name="hex_3">3</string>
+    <string name="hex_4">4</string>
+    <string name="hex_5">5</string>
+    <string name="hex_6">6</string>
+    <string name="hex_7">7</string>
+    <string name="hex_8">8</string>
+    <string name="hex_9">9</string>
+    <string name="hex_A">A</string>
+    <string name="hex_B">B</string>
+    <string name="hex_C">C</string>
+    <string name="hex_D">D</string>
+    <string name="hex_E">E</string>
+    <string name="hex_F">F</string>
+    <string name="equal">=</string>
+    <string name="func_plus">+</string>
+    <string name="func_minus">-</string>
+    <string name="func_mul">*</string>
+    <string name="func_div">/</string>
+    <string name="func_power">SQR</string>
+    <string name="func_log">log</string>
+    <string name="clear">CLEAR</string>
+    <string name="dec">DEC</string>
+    <string name="del">DEL</string>
+</resources>

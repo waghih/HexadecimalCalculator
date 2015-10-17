@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:background="@color/secondary"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_results"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="0"
+            android:textColor="@color/accent"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/accent"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/button_clear"
+            android:background="@color/function"
+            android:layout_weight="2"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dec"
+            android:id="@+id/button_dec"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/func_log"
+            android:id="@+id/button_log"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hex_D"
+                android:id="@+id/button_d"
+                android:background="@android:color/white"
+                android:layout_weight="1"
+                android:onClick="storeValue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hex_E"
+                android:id="@+id/button_e"
+                android:background="@android:color/white"
+                android:layout_weight="1"
+                android:onClick="storeValue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hex_F"
+                android:id="@+id/button_f"
+                android:background="@android:color/white"
+                android:layout_weight="1"
+                android:onClick="storeValue"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/func_power"
+                android:id="@+id/button_power"
+                android:background="@color/function"
+                android:layout_weight="1"
+                android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_A"
+            android:id="@+id/button_a"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_B"
+            android:id="@+id/button_b"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_C"
+            android:id="@+id/button_c"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/func_div"
+            android:id="@+id/button_div"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_7"
+            android:id="@+id/button_7"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_8"
+            android:id="@+id/button_8"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_9"
+            android:id="@+id/button_9"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/func_mul"
+            android:id="@+id/button_mul"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_4"
+            android:id="@+id/button_4"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_5"
+            android:id="@+id/button_5"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_6"
+            android:id="@+id/button_6"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/func_minus"
+            android:id="@+id/button_minus"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_1"
+            android:id="@+id/button_1"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_2"
+            android:id="@+id/button_2"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_3"
+            android:id="@+id/button_3"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/func_plus"
+            android:id="@+id/button_plus"
+            android:background="@color/function"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_0"
+            android:id="@+id/button_0"
+            android:background="@android:color/white"
+            android:layout_weight="2"
+            android:onClick="storeValue"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/del"
+            android:id="@+id/button_del"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:onClick="storeValue"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/equal"
+            android:id="@+id/button_equal"
+            android:background="@color/primary"
+            android:textColor="@color/accent"
+            android:layout_weight="1"
+            android:onClick="function"/>
+
+    </LinearLayout>
+
+</LinearLayout>
